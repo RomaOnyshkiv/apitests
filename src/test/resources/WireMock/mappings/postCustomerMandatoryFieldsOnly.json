@@ -1,0 +1,20 @@
+{
+  "request":
+    {
+      "urlPattern": "/rest/api/customer",
+      "method": "POST",
+      "bodyPatterns" : [{
+        "equalToJson" : "{\n \"id\" : 2,\n \"first_name\" : \"Roman\",\n \"last_name\" : \"Onyshkiv\" \n}"
+      }]
+    },
+
+  "response":
+    {
+      "status": 200,
+      "headers":
+        {
+          "Content-Type" : "application/json"
+        },
+      "body": "{\n \"id\": \"2\", \"status\": \"successfully created\" \n}"
+    }
+}
